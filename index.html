@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+      .container{
+          height: 500px;
+          width: 500px;
+          /* border: 1px solid rgb(158, 12, 12);   */
+          margin: 0 auto;   
+          padding: 130px;
+          box-sizing: border-box;
+          background-color: white;
+          border: none;
+          
+         
+          
+          
+           }
+           .submit{
+               /* border-radius: 10%; */
+               color: white;
+               background-color:green;
+               border: none;
+               width: 100px;
+               height: 27px;
+               text-align: center;
+               font-size: 0.9rem;
+               
+           }
+           body{
+               background: url('../img/cycle.jpg') no-repeat center center/cover;
+           }
+           #username {
+               height: 22px;
+               width: 250px;
+               margin: 8px 0px 0px 0px;
+               
+
+           }
+           #password
+           {
+            height: 22px;
+               width: 250px;
+               margin: 8px 0px 0px 0px;
+
+           }
+           h2{
+               margin: -54px 0px 0px 0px;          }
+    </style>
+</head>
+<body>
+    
+    <center><h1>Welcome to login page</h1></center>
+    
+    <div class="container">
+           <center><h2>User Login</h2></center>
+<div class="con">
+    <br><br>
+    User Id:<br> 
+         <input type="text" name="text" id="username">  <br><br>
+        Password: <br> <input type="password" name="text" id="password">
+        <br><br>
+        
+        <center><button onclick="login()" class="submit">LOGIN</button></center>
+
+</div>
+        
+    </div>
+      
+
+
+    <script>
+        function login()
+        {
+            var uname = document.getElementById('username').value;
+            var passw= document.getElementById('password').value;
+
+            if(uname=="Najmul" && passw=="12345678")
+            {
+                location.assign("./login.html");
+            }
+            else
+            {
+                window.alert("login failed");
+            }
+        }
+    </script>
+</body>
+</html>
